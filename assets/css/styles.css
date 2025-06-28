@@ -166,19 +166,25 @@ img {
 }
 
 .nav__toggle,
-.nav__close{
+.nav__close {
   font-size: 1.5rem;
   color: var(--white-color);
   cursor: pointer;
   transition: color .4s;
 }
 
+
+
+
+
+
+
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
  .nav__menu{
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: var(--black-color);
   width: 80%;
   height: 100%;
@@ -198,9 +204,34 @@ img {
   font-weight: var(--font-semi-bold);
   transition: color .4s;
  }
+
+.nav__link:hover{
+  color: var(--first-color);
+
+}
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 }
 
+
+
+
+
+
+
+} 
+
+
+
 /* Show menu */
+
+.show-menu{
+  right: 0;
+}
+
+
 
 
 /* Change background header */
@@ -213,7 +244,19 @@ img {
 
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-flex;
+  background: var(--first-gradient);
+  color: white;
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 2rem;
+  transition: box-shadow .4s;
+}
 
+.button:hover{
+  box-shadow: 0 8px 32px hsla(18, 95%, 55%, .3);
+  color: var(--white-color);
+}
 
 /*=============== ABOUT ===============*/
 
